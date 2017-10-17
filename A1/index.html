@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>CSC309 Programming on the Web (Summer 2016)</title>
+		<meta charset="UTF-8">
+		<meta name="Copyright" content="Name: Sunny Ng, CDF ID: c4ngsunn" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="assets/css/style.css" type="text/css" rel="stylesheet">
+		
+		<!-- icon below from http://www.cdf.toronto.edu/~csc309h/summer/ -->
+		<link rel="shortcut icon" href="favicon.ico" />
+	</head>
+	
+
+	<body>
+		<main>
+		<!-- Main Header Area -->
+			<header>
+				
+				<h1>
+					<a href="http://www.cdf.toronto.edu/">
+					<!-- University of Toronto Logo from https://www.utoronto.ca/ -->
+					<img class="header-logo" src="assets/images/UofT_Logo.png" alt="University of Toronto Logo" style="width:8%"></a>
+					Welcome to <em>CSC309 Programming on the Web (Summer 2016)</em>
+					</h1>
+			</header>
+
+
+			<!-- Main Navigation --> 
+			<nav id="main-nav">
+				<ul>
+	            	<li><a id="menu-general" href="#general">General Information</a></li>
+	            	<li><a id="menu-intro" href="#intro">Introduction &amp; Objectives</a></li>
+	            	<li><a id="menu-marking" href="#marking">Marking</a></li>
+	            	<li><a id="menu-policies" href="#policies">Policies</a></li>
+	        	    <li><a id="menu-schedule" href="#schedule">Schedule</a></li>
+	     	       	<li><a id="menu-resources" href="#resources">Resources</a></li>
+	     	       	<!-- Can't get dropdown to work :(
+	     	       	<li><div class="dropdown"><button class="dropdown-button">Quick Links</button><div class="dropdown-content">
+					    		<a href="http://piazza.com/utoronto.ca/summer2016/csc309/home/">Piazza</a>
+								<a href="https://markus.cdf.toronto.edu/csc309-2016-05/">Markus</a>
+								<a href="http://www.cdf.toronto.edu/">CDF</a></div></div>
+					</li> -->
+		        </ul>
+			</nav>
+
+			<!-- General Information Section -->
+	        <article id="general">
+	    
+	            <h2>General Information</h2>
+	            
+	            <dl>
+	                <dt><strong>Instructor:</strong></dt>
+	                <dd>Katie Seaborn, kseaborn /at/ mie.utoronto.ca</dd>
+	                
+	                <dt><strong>Office Hours:</strong></dt>
+	                <dd>Tuesdays from 4:00 - 5:00 pm, BA 3219</dd>
+	                
+	                <dt><strong>TAs:</strong></dt>
+	                <dd>
+	                    Rachel Franz, rachel /at/ taglab.ca <br />
+	                    Jeff Wintersinger, jeff /at/ wintersinger.org <br />
+	                    Mohammad Danesh, danesh /at/ cs.toronto.edu
+	                </dd>
+	                
+	                <dt><strong>Class Schedule:</strong></dt>
+	                <dd>Mondays from 6pm-9pm (May 9th-August 15th, 2016)</dd>
+	                
+	                <dt><strong>Lecture Location:</strong></dt>
+	                <dd>BA 1200</dd>
+	                
+	                <dt><strong>Tutorial Locations:</strong></dt>
+	                <dd>BA 2145, BA 2155</dd>
+	                
+	                <dt><strong>Piazza:</strong></dt>
+	                <dd><a href="http://piazza.com/utoronto.ca/summer2016/csc309/home/">http://piazza.com/utoronto.ca/summer2016/csc309/home/</a></dd>
+	                
+	                <dt><strong>Markus:</strong></dt>
+	                <dd><a href="https://markus.cdf.toronto.edu/csc309-2016-05/">https://markus.cdf.toronto.edu/csc309-2016-05/</a></dd>
+	                
+	                <dt><strong>Syllabus:</strong></dt>
+	                <dd><a href="http://www.cdf.toronto.edu/~csc309h/summer/docs/CSC309-Syllabus-Summer2016.pdf">Download the full syllabus (.pdf)</a></dd>
+	            </dl>
+	        <br>
+	        <p class="p_right"><a class="toplink" href="#main-nav">Back to the Top</a></p>
+
+	        </article><!-- #general -->
+
+
+	        <!-- Introduction Section -->
+	        <article id="intro">
+	    
+	            <h2>Introduction:</h2>
+	            <p>
+	                This course provides an introduction to the technologies and techniques used when developing modern web applications. We discuss web fundamentals, interoperability of languages, technologies for static and dynamic content generation, interactivity, application architectures, and mobile-supported, responsive web development. We also cover design principles, security, and web performance.
+	            </p>
+	            
+	            <h3>Learning Objectives:</h3>
+	            <p>
+	                This course has three main learning objectives:
+	            </p>
+	            <ol>
+	                <li>
+	                    Understand how to define and explain protocols, concepts, and technologies that enable web applications.
+	                </li>
+	                <li>
+	                    Develop the ability to analyze, design, and implement web applications that accommodate specific requirements and constraints with regard to issues of usability, performance and security.
+	                </li>
+	                <li>
+	                    Learn how to work as part of a team or individually to explore relevant alternatives and make design and development recommendations.
+	                </li>
+	            </ol>
+	            
+	            <h3>Prerequisites:</h3>
+	            <p>
+	                <strong>CSC343</strong> is recommended but waived as a prerequisite. Students who don't have <strong>CSC209</strong> need to show experience with developing programs of significant size. 
+	            </p>
+	            
+	            <h3>Method of Instruction:</h3>
+	            <p>
+	                In-person, in-lab lecture-based instruction and tutorials/assignments. <u>Students are strongly recommended to bring their own laptops for tutorial work</u>; no computer labs are available inside of class hours.
+	            </p>
+	        <br>
+	        <p class="p_right"><a class="toplink" href="#main-nav">Back to the Top</a></p>
+
+	        </article><!-- #intro -->
+
+	        <!-- Marking Scheme Section -->
+	        <article id="marking">
+	        
+	            <h2>Marking Scheme:</h2>
+	            
+	            <p>
+	                To pass the course, you must achieve a minimum grade of 40% or higher on the final exam. This means that if your grade on the final exam falls below 40%, your final grade in the course will be capped at 40%.
+	            </p>
+	            
+	            <div style="overflow-x:auto;">	<!-- div to create Responsive Table -->
+	            <table>
+	                <tr>
+	                    <th>Deliverable</th>
+	                    <th>Approach</th>
+	                    <th>Weight</th>
+	                    <th>Out</th>
+	                    <th>Due</th>
+	                </tr>
+	                <tr>
+	                    <td><a href="http://www.cdf.toronto.edu/~csc309h/summer/docs/A1-Instructions.pdf">Assignment 1: HTML &amp; CSS</a></td>
+	                    <td>Individual</td>
+	                    <td>10%</td>
+	                    <td>Week 1</td>
+	                    <td>Week 3</td>
+	                </tr>
+	                <tr>
+	                    <td>Assignment 2: JavaScript &amp; Canvas</td>
+	                    <td>Pair</td>
+	                    <td>10%</td>
+	                    <td>Week 3</td>
+	                    <td>Week 6</td>
+	                </tr>
+	                <tr>
+	                    <td>Assignment 3: Web Service</td>
+	                    <td>Individual</td>
+	                    <td>10%</td>
+	                    <td>Week 6</td>
+	                    <td>Week 8</td>
+	                </tr>
+	                <tr>
+	                    <td>Assignment 4: Large App, Part 1</td>
+	                    <td>Group of 4</td>
+	                    <td>5%</td>
+	                    <td>Week 8</td>
+	                    <td>Week 10</td>
+	                </tr>
+	                <tr>
+	                    <td>Assignment 4: Large App, Part 2</td>
+	                    <td>Group of 4</td>
+	                    <td>20%</td>
+	                    <td>Week 10</td>
+	                    <td>Week 12</td>
+	                </tr>
+	                <tr>
+	                    <td>Tutorial/Participation</td>
+	                    <td>Pair</td>
+	                    <td>10%</td>
+	                    <td>Weekly</td>
+	                    <td>End of tutorial</td>
+	                </tr>
+	                <tr>
+	                    <td>Final Exam</td>
+	                    <td></td>
+	                    <td>35%</td>
+	                    <td></td>
+	                    <td>Week 14</td>
+	                </tr>
+	            </table>
+	            </div>
+	        <br>
+	        <p class="p_right"><a class="toplink" href="#main-nav">Back to the Top</a></p>
+
+	        </article><!-- #marking -->
+
+	        <article id="policies">
+	        
+	            <h2>Grading Policies:</h2>
+	            <p>
+	                Assignments will be posted on the course website. Deadlines are fixed; no extensions will be allowed.
+	            </p>
+	            
+	            <section>
+	                
+	                <h3>Submit through Markus:</h3>
+	                <p>
+	                    All deliverables must be submitted online through <a href="https://markus.cdf.toronto.edu/csc309-2016-05/">Markus</a>. All assignments are due 11:59pm on their due date. Submit early to avoid last minute submission-related problems, which will not excuse tardy submissions. Emailed submissions will not be accepted unless Markus is down.
+	                </p>
+	                
+	                <h3>Late coursework:</h3>
+	                <p>
+	                    You can turn in your assignment up to 2 days late, but this will cost you 10% of the maximum grade for every day you are late (i.e., an assignment turned 2 days late can get a maximum of 12/15). No assignment will be accepted after the 2nd day; you will receive a grade of 0 for that assignment. If you are struggling with an assignment, talk to the instructor or the TAs for help well before the deadline.
+	                </p>
+	                
+	                <h3>Re-marking:</h3>
+	                <p>
+	                    You have up to 5 days from the time the marked assignment is available for pick-up to ask the TA for a re-mark. No assignment will be re-marked after this period. If you are still dissatisfied after talking to the TA, then email the instructor to set an appointment.
+	                </p>
+	                
+	                <h3>Cheating/Plagiarism:</h3>
+	                <p>
+	                    The policy of your faculty or school will be in effect. While you are encouraged to discuss the course content and assignments with your classmates, all work that you submit must be your own. When you submit an assignment with your name on it, you are certifying that you have done the work on that assignment yourself. Remember that the penalty for cheating is always worse than handing in the assignment late.
+	                </p>
+	            
+	            </section>
+
+	            <br>
+	            <h2>Communication Policies:</h2>
+	            <p>
+	                If you have a question, check the course <a href="http://piazza.com/utoronto.ca/summer2016/csc309/home/" title="Piazza">discussion forums</a> to see if it's already been asked and answered. If not, feel free to post your question&ndash;you will likely get a quicker response on the forums. If you think your question is not appropriate for the forums, feel free to email the instructor. If you do, make sure that you include "CSC309" in the subject line of your email. Otherwise it may get lost in the churn.
+	            </p>
+
+	            <br>
+	            <h2>Teamwork Policies:</h2>
+	            <p>
+	                Some assignments require partner- or group-based work.
+	            </p>
+	            
+	            <section>
+	                
+	                <h3>Distribution of work:</h3>
+	                <p>
+	                    In the readme file submitted with each assignment, briefly indicate who contributed to what. If two or more people worked on the same part, provide a percentage indicating each person's relative contribution.
+	                </p>
+	                
+	                <h3>Self and peer assessments:</h3>
+	                <p>
+	                    For assignments involving pairs or teams, each student must privately fill out and individually submit a self and peer assessment document through <a href="https://markus.cdf.toronto.edu/csc309-2016-05/">Markus</a>. A template can be found <a href="#resources">below</a>.
+	                </p>
+	                
+	                <h3>Conflicts:</h3>
+	                <p>
+	                    Students are encouraged to resolve conflicts on their own whenever possible. However, if you find yourself in a delicate situation and are unsure how to proceed, please contact myself or one of the TAs well ahead of assignment deadlines and we will help mediate.
+	                </p>
+	                
+	            </section>
+	        <br>
+	        <p class="p_right"><a class="toplink" href="#main-nav">Back to the Top</a></p>
+
+	        </article><!-- #policies -->
+	    
+
+	        <article id="schedule">
+	    
+	            <h2>Schedule:</h2>
+	            
+	            <p>
+	                All linked files (e.g., slides, instructions) are .pdf unless noted.
+	            </p>
+	            
+	            <div style="overflow-x:auto;">	<!-- div to create Responsive Table -->
+	            <table id="table-schedule">
+	                <tr>
+	                    <th>W</th>
+	                    <th>Date</th>
+	                    <th>Topics</th>
+	                    <th>Tutorial</th>
+	                    <th>Deliverables</th>
+	                </tr>
+	                <tr>
+	                    <td>1</td>
+	                    <td>May 9</td>
+	                    <td><a href="http://www.cdf.toronto.edu/~csc309h/summer/lectures/W1-Lecture-Intro_Net_HTML_CSS_web.min.pdf">Introduction; HTPP; HTML(5) + CSS(3)</a></td>
+	                    <td>Tutorial 1: <a href="http://www.cdf.toronto.edu/~csc309h/summer/labs/W1-Lab-Instructions.pdf">"Hello World (Wide Web)</a> + <a href="http://www.cdf.toronto.edu/~csc309h/summer/labs/W1-Lab-Git-Fork.pdf">Version Control with Github</a></td>
+	                    <td>New: <a href="http://www.cdf.toronto.edu/~csc309h/summer/docs/A1-Instructions.pdf">Assignment 1: HTML & CSS</a></td>
+	                </tr>
+	                <tr>
+	                    <td>2</td>
+	                    <td>May 16</td>
+	                    <td><a href="http://www.cdf.toronto.edu/~csc309h/summer/lectures/W2-Lecture-Layout_DOM_Responsive.web.pdf">Page Layout; DOM; Responsive Design with Media Queries</a></td>
+	                    <td>Tutorial 2: <a href="http://www.cdf.toronto.edu/~csc309h/summer/labs/W2-Lab-WebDevTools.web.pdf">Web Development Tools</a>; <a href="http://www.cdf.toronto.edu/~csc309h/summer/labs/W2-Lab-Instructions.pdf">Responsive Design</a></td>
+	                    <td></td>
+	                </tr>
+	                <tr>
+	                    <td>3</td>
+	                    <td>May 23</td>
+	                    <td>Holiday; no classes</td>
+	                    <td></td>
+	                    <td><span style="background-color: #FFFF00">Due: Assignment 1 (Wed @ 11:59pm)</span></td>
+	                </tr>
+	                <tr>
+	                    <td>4</td>
+	                    <td>May 30</td>
+	                    <td>HTML5 Canvas; JavaScript + jQuery</td>
+	                    <td>Tutorial 3: HTML5 Canvas</td>
+	                    <td>New: Assignment 2: JavaScript + Canvas</td>
+	                </tr>
+	                <tr>
+	                    <td>5</td>
+	                    <td>June 6</td>
+	                    <td>Node.js; AJAX; XML + JSON</td>
+	                    <td>Tutorial 4: jQuery</td>
+	                    <td></td>
+	                </tr>
+	                <tr>
+	                    <td>6</td>
+	                    <td>June 13</td>
+	                    <td>REST API; Sessions + Cookies; HTML Forms; Databases; ER-db-design</td>
+	                    <td>Tutorial 5: jQuery, AJAX + JSON</td>
+	                    <td>
+	                        <p>Due: Assignment 2 (Wed @ 11:59pm)</p>
+	                        <p>New: Assignment 3: Web Service</p>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>7</td>
+	                    <td>June 20</td>
+	                    <td>Form Validation; Express.js; Database Schema</td>
+	                    <td>Tutorial 6: Node.js + Databases</td>
+	                    <td></td>
+	                </tr>
+	                <tr>
+	                    <td>8</td>
+	                    <td>June 27</td>
+	                    <td>React.js</td>
+	                    <td>Tutorial 7: React.js</td>
+	                    <td>
+	                        <p>Due: Assignment 3 (Wed @ 11:59pm)</p>
+	                        <p>New: Assignment 4: Large App, Part 1</p>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>9</td>
+	                    <td>July 4</td>
+	                    <td>Web Architectures; Performance</td>
+	                    <td>Tutorial 8: Performance</td>
+	                    <td></td>
+	                </tr>
+	                <tr>
+	                    <td>10</td>
+	                    <td>July 11</td>
+	                    <td>Web Security</td>
+	                    <td>Tutorial 9: Web Security</td>
+	                    <td>
+	                        <p>Due: Assignment 4, Part 1 (Wed @ 11:59pm)</p>
+	                        <p>New: Assignment 4: Large App, Part 2</p>
+	                    </td>
+	                </tr>
+	                <tr>
+	                    <td>11</td>
+	                    <td>July 18</td>
+	                    <td>Cloud Computing; From Project to Project; SEO</td>
+	                    <td>Tutorial 10: Special Topics</td>
+	                    <td></td>
+	                </tr>
+	                <tr>
+	                    <td>12</td>
+	                    <td>July 25</td>
+	                    <td>Web Search Engines; Advanced Topics</td>
+	                    <td>Assignment 4 (Part 2) Troubleshooting</td>
+	                    <td>Due: Assignment 4: Large App, Part 2 (Wed @ 11:59pm)</td>
+	                </tr>
+	                <tr>
+	                    <td>13</td>
+	                    <td>Aug 1</td>
+	                    <td>Holiday; no classes</td>
+	                    <td></td>
+	                    <td></td>
+	                </tr>
+	                <tr>
+	                    <td>14</td>
+	                    <td>Aug 8</td>
+	                    <td>Student Demos of Assignment 4</td>
+	                    <td>No tutorial</td>
+	                    <td>Final exam (date TBA)</td>
+	                </tr>
+	            </table>
+	            </div>
+	        <br>
+	        <p class="p_right"><a class="toplink" href="#main-nav">Back to the Top</a></p>   
+
+	        </article><!-- #schedule -->
+	    
+
+	        <article id="resources">
+	            
+	            <h2>Resources:</h2>
+	            
+	            <ul>
+	                <li>
+	                    <a href="https://wwwcgi.cdf.toronto.edu/~csc309h/summer/archives/">Mailing List Archives</a>
+	                </li>
+	                <li>
+	                    <a href="http://www.cdf.toronto.edu/~csc309h/summer/docs/A%23-PeerAndSelfEval-YOURLASTNAME_YOURFIRSTNAME.docx">Peer and Self Evaluation (.docx)</a>: Submitted individually for pair- and team-based projects.
+	                </li>
+	            </ul>
+	            
+	            
+	            <h2>Recommended Readings:</h2>
+	            <p>
+	                While not required, these readings recommended as supporting materials and/or key sources for the latest web-related news, tips, and technologies.
+	            </p>
+	            
+	            <div style="overflow-x:auto;">	<!-- div to create Responsive Table -->
+	            <table class="table-readings">
+	                <tr>
+	                    <th>Textbooks</th>
+	                    <th>Web Sources</th>
+	                    <th>Documentation</th>
+	                </tr>
+	                <tr>
+	                    <td>
+	                        <ul>
+	                            <li>
+	                                <a href="http://www.amazon.com/Web-Programming-Step-Marty-Stepp/dp/B004A5TU0C">Web Programming Step by Step</a> by Steep, Miller &amp; Kirst
+	                            </li>
+	                            <li>
+	                                <a href="http://www.amazon.com/Learning-Web-Development-Semmy-Purewal/dp/1449370195/">Learning Web App Development</a> by Semmy Purewal
+	                            </li>
+	                        </ul>
+	                    </td>
+	                    <td>
+	                        <ul>
+	                            <li>
+	                                <a href="https://www.w3.org/">W3C</a>
+	                            </li>
+	                            <li>
+	                                <a href="https://www.smashingmagazine.com/">Smashing Magazine</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://alistapart.com/">A List Apart</a>
+	                            </li>
+	                            <li>
+	                                <a href="https://css-tricks.com/">CSS-Tricks</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://awwwards.com/">Awwwards</a> and <a href="http://www.awwwards.com/developer/">Developer Awwwards</a>
+	                            </li>
+	                        </ul>
+	                    </td>
+	                    <td>
+	                        <ul>
+	                            <li>
+	                                <a href="http://w3schools.com/">W3Schools</a>
+	                            </li>
+	                            <li>
+	                                <a href="https://developer.mozilla.org/">Mozilla Developer Network</a>
+	                            </li>
+	                            <li>
+	                                <a href="http://api.jquery.com/">jQuery API</a>
+	                            </li>
+	                            <li>
+	                                <a href="https://nodejs.org/api/index.html">Node.js API</a>
+	                            </li>
+	                            <li>
+	                                <a href="https://git-scm.com/doc/">Git Docs</a>
+	                            </li>
+	                        </ul>
+	                    </td>
+	                </tr>
+	            </table>
+	            </div>
+	        <br>
+	        <p class="p_right"><a class="toplink" href="#main-nav">Back to the Top</a></p>   
+
+	        </article><!-- #resources -->
+	        
+	        <footer>
+	            <p>Copyright © 2016 | Content &amp; Materials from <a href="http://www.cdf.toronto.edu/~csc309h/summer/">~csc309h</a> | Site by Sunny Ng  </p>
+	        </footer>
+	    </main>
+
+	</body>
+</html>

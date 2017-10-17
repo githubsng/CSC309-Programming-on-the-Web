@@ -1,0 +1,347 @@
+/* Body */
+body {
+	font: 13px Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	padding: 0;
+	margin: 0;
+	color: #333;	/*text color*/
+}
+
+/* Headings */
+h1, h2 {
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	text-align: center;
+}
+
+/* General links */
+a {
+	color: #e59400;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #2C5197;
+	text-decoration: underline;
+}
+
+
+/* Back to the Top Link */
+a.toplink {
+	font-size: 15px;
+	color: #2C5197;
+	text-decoration: none;
+}
+a.toplink:hover {
+	color: black;
+}
+
+/* position Top Links to the right */
+p.p_right {
+	text-align: right
+}
+
+
+/* Main Header */
+header {
+	background-color: #d6d6d6;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/* Main Navigation Bar */
+nav {
+	background-color: #363636;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #363636;
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #FFA500;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Drop-down menu ----- I give up lol.*/
+/*
+.dropdown-button {
+    background-color: #363636;		-- blend in with rest of the nav links
+    color: white;
+    padding: 14px 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-button {
+    background-color: #FFA500;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;			
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+
+
+/*-------------Articles--------------*/
+article {
+	background-color:#ffffff;
+	border-bottom: 10px solid #eee;
+}
+
+
+/* Tables */
+table {
+	table-layout: auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table ul {
+	list-style: none;
+}
+
+th, td {
+    text-align: left;
+    padding: 5px;
+}
+
+tr:nth-child(even){
+	background-color: #f1f1f1
+}
+
+th {
+    background-color: #363636;
+    color: white;
+}
+
+
+/* Footer */
+footer {
+	background-color: #3f3f3f;
+	color: #FFF;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+
+
+/*---------------------------Media queries---------------------------*/
+
+/* Smartphone: 320x480 */
+@media screen and (min-width: 320px){		
+	
+	/* Header Logo */
+	.header-logo {
+		display: none;
+	}
+
+	/* Headers */
+	h1 {
+		font-size: 22px;
+	}
+
+	/* Main Navigation */
+	nav {
+		padding-left: 0;
+	}
+
+	/* Content Areas and Articles */
+	article {
+		margin-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	/* Definition List under General Info */
+	dl {
+	    padding: 0;
+	}
+	dt {
+	    float: none;
+	    clear: none;
+	}
+
+	dd {
+		margin-left: 0;
+		margin-bottom: 0.5rem;
+	    padding-bottom: 0.5em;
+	}
+
+	dl dd {
+		display: block;
+	}
+
+	/* Resources Table */
+	.table-readings th {
+		text-align: left;
+		padding-left: 10px;
+	}
+	.table-readings ul {
+		text-align: center;
+		padding-left: 0px;
+		padding-bottom: 10px;
+	}
+
+	/* Footer */
+	footer {
+		padding-left: 10px;
+		padding-right: 10px	;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+}
+
+
+/* Smartphone: 480x320 */
+@media screen and (min-width: 480px){
+	/* Resources Table */
+	.table-readings ul {
+		text-align: left;
+	}
+}
+
+
+/* Tablet: 768x1024 */
+@media screen and (min-width: 768px){
+	/* Header */
+	h1 {
+		font-size: 24px;
+	}
+
+	/* Resources Table */
+	.table-readings ul {
+		text-align: left;
+		padding-left: 0px;
+		padding-bottom: 10px;
+	}
+
+	/* Header Logo */
+	.header-logo {
+		display: inherit;
+	}
+
+	/* Headers */
+	h1 {
+		font-size: 24px;
+	}
+
+	/* Main Navigation */
+	nav {
+		padding-left: 10px;
+	}
+
+	/* Content Areas and Articles*/
+	article {
+		margin-top: 30px;
+		padding-bottom: 30px;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
+	/* Definition List under General Info */
+	dl {
+	    padding: 0;
+	}
+	dt {
+	    float: left;
+	    clear: left;
+	    text-align: right;
+	}
+	dd {
+		margin-left: 200px;
+		margin-bottom: 0.5rem;
+	    padding-bottom: 0.5em;
+	}
+	dl dd {
+		display: block;
+	}
+	/* Resources Table */
+	.table-readings th {
+		text-align: left;
+		padding-left: 10px;
+	}
+	.table-readings ul {
+		text-align: left;
+		padding-left: 10px;
+	}
+	.table-readings {
+		width: 100%;
+	}
+
+}
+
+
+/* Tablet: 1024x768 */
+@media screen and (min-width: 1024px){
+	article {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+}
+
+
+/* Desktop: 1280x980 */
+@media screen and (min-width: 1280px){
+	/* Content Area and Articles */
+	article {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	
+	/* Definition List under General Info */
+	dd {
+		margin-left: 300px;
+	}
+}
